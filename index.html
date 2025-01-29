@@ -9,16 +9,19 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="js.js"></script>
+   
 </head>
 
 <body class="w-100 h-100">
-    <main class="card rounded-4 w-50 h-50 d-flex mx-auto " style="background-color:#21B597 ;">
+
+    <!--Card 1-->
+    <main class="card rounded-4 w-50 h-50 d-flex mx-auto " id="card1" style="background-color:#21B597 ;">
         <article>
             <section class="card-body">
                 <h1 class="card-title text-center">Question 1</h1>
                 <img class="d-flex mx-auto w-100 rounded" src="img/country1.png">
                 <p class="text-center">Indicate the country that corresponds to the picture</p>
-                <form class="btn-group ">
+                <form class="btn-group max-auto d-flex justify-content-center">
                     <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
                     <label class="btn btn-dark" for="option1">Unselected</label>
                     <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
@@ -33,9 +36,129 @@
                     <label class="btn btn-outline-dark" for="option6">Russia</label>
                 </form>
             </section>
-            <section class="">
+            <section>
                 <form class="text-center">
-                    <button class="btn btn-warning">Previous</button>
+                    <button class="btn btn-warning" onclick="Cambiar_Cartas('card1','card2')">Previous</button>
+                    <button class="btn btn-warning" >Next</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <!--Card 2-->
+    <main class="card rounded-4 w-50 h-50 d-flex mx-auto d-none" id="card2" style="background-color:#21B597 ;">
+        <article>
+            <section class="card-body">
+                <h1 class="card-title text-center">Question 2</h1>
+                <img class="d-flex mx-auto w-100 rounded" src="img/country2.png">
+                <p class="text-center">Indicate the country that corresponds to the picture</p>
+                <form class="btn-group max-auto d-flex justify-content-center">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-dark" for="option1">Unselected</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option2">USA</label>
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option3">India</label>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option4">France</label>
+                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option5">Italy</label>
+                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option6">Russia</label>
+                </form>
+            </section>
+            <section>
+                <form class="text-center">
+                    <button class="btn btn-warning" onclick="Cambiar_Cartas('card2','card1')">Previous</button>
+                    <button class="btn btn-warning">Next</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <!--Card 3-->
+    <main class="card rounded-4 w-50 h-50 d-flex mx-auto d-none" id="card3" style="background-color:#21B597 ;">
+        <article>
+            <section class="card-body">
+                <h1 class="card-title text-center">Question 3</h1>
+                <img class="d-flex mx-auto w-100 rounded" src="img/country3.png">
+                <p class="text-center">Indicate the country that corresponds to the picture</p>
+                <form class="btn-group max-auto d-flex justify-content-center">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-dark" for="option1">Unselected</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option2">USA</label>
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option3">India</label>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option4">France</label>
+                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option5">Italy</label>
+                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option6">Russia</label>
+                </form>
+            </section>
+            <section>
+                <form class="text-center">
+                    <button class="btn btn-warning" onclick="Cambiar_Cartas('card3','card2')">Previous</button>
+                    <button class="btn btn-warning">Next</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <!--Card 4-->
+    <main class="card rounded-4 w-50 h-50 d-flex mx-auto d-none" id="card4" style="background-color:#21B597 ;">
+        <article>
+            <section class="card-body">
+                <h1 class="card-title text-center">Question 4</h1>
+                <img class="d-flex mx-auto w-100 rounded" src="img/country4.png">
+                <p class="text-center">Indicate the country that corresponds to the picture</p>
+                <form class="btn-group max-auto d-flex justify-content-center">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-dark" for="option1">Unselected</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option2">USA</label>
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option3">India</label>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option4">France</label>
+                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option5">Italy</label>
+                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option6">Russia</label>
+                </form>
+            </section>
+            <section>
+                <form class="text-center">
+                    <button class="btn btn-warning" onclick="Cambiar_Cartas('card4','card3')">Previous</button>
+                    <button class="btn btn-warning" >Next</button>
+                </form>
+            </section>
+        </article>
+    </main>
+    <!--Card 5-->
+    <main class="card rounded-4 w-50 h-50 d-flex mx-auto d-none" id="card5"   style="background-color:#21B597 ;">
+        <article>
+            <section class="card-body">
+                <h1 class="card-title text-center">Question 5</h1>
+                <img class="d-flex mx-auto w-100 rounded" src="img/country5.png">
+                <p class="text-center">Indicate the country that corresponds to the picture</p>
+                <form class="btn-group max-auto d-flex justify-content-center">
+                    <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                    <label class="btn btn-dark" for="option1">Unselected</label>
+                    <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option2">USA</label>
+                    <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option3">India</label>
+                    <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option4">France</label>
+                    <input type="radio" class="btn-check" name="options" id="option5" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option5">Italy</label>
+                    <input type="radio" class="btn-check" name="options" id="option6" autocomplete="off">
+                    <label class="btn btn-outline-dark" for="option6">Russia</label>
+                </form>
+            </section>
+            <section>
+                <form class="text-center">
+                    <button class="btn btn-warning" onclick="Cambiar_Cartas('card5','card1')">Previous</button>
                     <button class="btn btn-warning">Next</button>
                 </form>
             </section>
